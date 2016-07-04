@@ -1,5 +1,5 @@
-author = "Name für Gruppe Adler";     //mission author
-onLoadName = "ENDGAME TEMPLATE";      //mission name
+author = "McDiod für Gruppe Adler";     //mission author
+onLoadName = "ENDGAME SUGARLAKE";      //mission name
 onLoadMission = "";                   //description in loadscreen
 loadScreen = "data\loadpic.paa";      //picture in loadscreen
 
