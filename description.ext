@@ -40,7 +40,11 @@ class Params
 		title = "Civilian Traffic";
 		values[] = {0, 1};
 		texts[] =  {"False", "True"};
-		default = 0;
+		#ifndef CIVTRAFFIC
+			default = 0;
+		#else
+			default = CIVTRAFFIC;
+		#endif
 	};
 };
 
@@ -55,7 +59,8 @@ class CfgSounds
 	};
 };
 
-class CfgTaskEnhancements
+
+/*class CfgTaskEnhancements
 {
 	enable 		= 1;
 	3d 		= 1;
@@ -63,10 +68,11 @@ class CfgTaskEnhancements
 	share		= 1;
 	propagate	= 1;
 };
+
 taskManagement_markers2D = 1;
 taskManagement_markers3D = 1;
 taskManagement_propagate = 1;
-taskManagement_drawDist  = 2500;
+taskManagement_drawDist  = 2500;*/
 
 corpseManagerMode = 1; 					// Type of removed bodies: 0 - none, 1 - all, 2 - only respawnable, 3 - only non-respawnable
 corpseLimit = 30	; 						// Max number of bodies which can be available at the same time. When exceeded, start deleting immediately.

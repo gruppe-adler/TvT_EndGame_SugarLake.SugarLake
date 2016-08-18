@@ -15,11 +15,9 @@ if (isServer) then {
   SHOWCARRIERMARKER = (paramsArray select 1) == 1;
   publicVariable "SHOWCARRIERMARKER";
 
-  MAXRESPAWNTIME = 1200;
   OPFOR_ELIMINATED = false;
   BLUFOR_ELIMINATED = false;
   ENDINDRAW = false;
-  publicVariable "MAXRESPAWNTIME";
   publicVariable "OPFOR_ELIMINATED";
   publicVariable "BLUFOR_ELIMINATED";
   publicVariable "ENDINDRAW";
@@ -30,9 +28,11 @@ if (isServer) then {
   CIV_GUNFIGHT_POS = [0,0,0];
   publicVariable "CIV_GUNFIGHT_POS";
 
-  mcd_fnc_addDeadPlayerToWave = compile preProcessFileLineNumbers "helpers\fn_addDeadPlayerToWave.sqf";
-  mcd_fnc_handleRespawned = compile preprocessFileLineNumbers "helpers\fn_handleRespawned.sqf";
-  mcd_fnc_addRespawnedToGroup = compile preprocessFileLineNumbers "helpers\fn_addRespawnedToGroup.sqf";
+  mcd_fnc_addDeadPlayerToWave = compile preProcessFileLineNumbers "functions\fn_addDeadPlayerToWave.sqf";
+  mcd_fnc_handleRespawned = compile preprocessFileLineNumbers "functions\fn_handleRespawned.sqf";
+  mcd_fnc_addRespawnedToGroup = compile preprocessFileLineNumbers "functions\fn_addRespawnedToGroup.sqf";
+  mcd_fnc_hideTaskMarkers = compile preprocessFileLineNumbers "functions\fn_hideTaskMarkers.sqf";
+  mcd_fnc_getBuildingPositions = compile preprocessFileLineNumbers "functions\fn_getBuildingPositions.sqf";
 
   addMissionEventHandler ["HandleDisconnect", {[_this select 3] spawn mcd_fnc_handleRespawned}];
 
@@ -49,11 +49,15 @@ if (isServer) then {
   [] execVM "fillContainerInit.sqf";
   [] execVM "server\civKillListener.sqf";
   [] execVM "server\civGunfightListener.sqf";
+  ["SERVER"] execVM "helpers\uploadTime.sqf";
+  ["FINDOBJS"] spawn mcd_fnc_hideTaskMarkers;
 
   //mission scripts
   [] execVM "server\respawnVehicles.sqf";
   [] execVM "server\handleRespawns.sqf";
   [] execVM "server\detectAllDead.sqf";
   [] execVM "server\endInDraw.sqf";
+  [] execVM "server\uploadSoldiers.sqf";
+  [] execVM "server\overwriteReveal.sqf";
 
 };
