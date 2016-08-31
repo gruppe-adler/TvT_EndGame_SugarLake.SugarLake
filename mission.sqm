@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=740;
+		nextID=792;
 	};
 	class Camera
 	{
-		pos[]={3905.7334,344.68167,7225.3203};
-		dir[]={0.77832574,-0.29790685,-0.55270821};
-		up[]={0.24290316,0.95459515,-0.17249057};
-		aside[]={-0.57899797,-1.2619421e-007,-0.81534785};
+		pos[]={1962.4017,10.700138,403.315};
+		dir[]={0.14277136,-0.3869966,0.9109627};
+		up[]={0.059920941,0.92208093,0.38233012};
+		aside[]={0.98794192,3.9377483e-008,-0.15483618};
 	};
 };
 binarizationWanted=0;
@@ -129,7 +129,7 @@ addons[]=
 	"A3_Structures_F_EPB_Civ_Camping",
 	"A3_Structures_F_Items_Food",
 	"A3_Structures_F_Households_Slum",
-	"ns_anims",
+	"Desert",
 	"CUP_Misc3_Config",
 	"CUP_CAStructures_E_Misc_Misc_Interier",
 	"A3_Structures_F_Heli_Civ_Market",
@@ -392,6 +392,8 @@ class AddonsMetaData
 		{
 			className="task_force_radio_items";
 			name="task_force_radio_items";
+			author="[TF]Nkey";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
 		class Item33
 		{
@@ -565,8 +567,8 @@ class AddonsMetaData
 		};
 		class Item59
 		{
-			className="ns_anims";
-			name="ns_anims";
+			className="Desert";
+			name="Desert";
 		};
 		class Item60
 		{
@@ -45877,6 +45879,7 @@ class Mission
 			};
 			id=3967;
 			type="rhsgref_BRDM2_ins_g";
+			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0

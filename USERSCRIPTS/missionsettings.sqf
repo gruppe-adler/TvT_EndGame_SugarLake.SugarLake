@@ -13,7 +13,7 @@ MAXRESPAWNTIME = 1200;                //maximum time a player has to wait under 
 VEHICLERESPAWNTIME = 400;             //time after which vehicles respawn
 VEHICLERESPAWNRADIUS = 500;           //distance between startposition and current position for a vehicle to start the respawn timer
 
-UPLOADSPEED = 0.2;                      //speed of 1 means ~ 90 second upload for one person / 45 second for two / etc.    speed of 0.5 means 180 seconds for one person
+UPLOADSPEED = 0.05;                      //speed of 1 means ~ 90 second upload for one person / 45 second for two / etc.    speed of 0.5 means 180 seconds for one person
 DLICONRANGE = 20;                     //range in meters at which 3D icon on intel is displayed - -1 to disable entirely - WARNING: values lower than 4 may cause inability to access large download objects (vehicles, cargo containers, ...)
 EXACTINTELPOSITIONS = false;          //phase 2 task markers are exactly on intel positions - if false, trigger area is marked instead
 DEFMARKERONUL = false;                //phase 3 - defending team will only be able to see the upload point once the attacking team has started uploading
@@ -26,7 +26,7 @@ BLUFORAIFACTION = "us_ocp";           //faction of AI that will spawn at blufor 
 OPFORAIFACTION = "rus_emr";           //faction of AI that will spawn at opfor upload - check below for available factions (allied AI factions)
 
 AUTOMATICRADIOS = false;              //automatically give players the correct radios - set this to true if you want to use vanilla loadouts
-SAMEENCRYPTION = true;                //enables radios of all sides to receive each other - use this if you want to give players a BLUFOR longrange and an INDEPENDENT shortrange (for example) - BLUFOR and OPFOR hear each other if both are on the same frequency
+SAMEENCRYPTION = false;                //enables radios of all sides to receive each other - use this if you want to give players a BLUFOR longrange and an INDEPENDENT shortrange (for example) - BLUFOR and OPFOR hear each other if both are on the same frequency
 BLUFORSWRADIO = "tf_anprc152";        //blufor sw radio - alternatives: tf_rf7800str, tf_anprc154, tf_pnr1000a, tf_anprc148jem
 OPFORSWRADIO = "tf_fadak";            //opfor sw radio - alternatives: tf_rf7800str, tf_anprc154, tf_pnr1000a, tf_anprc148jem
 BLUFORLRRADIO = "tf_rt1523g_big_rhs"; //blufor lr radio
