@@ -15,6 +15,7 @@ switch (_mode) do {
     if (!isServer) exitWith {diag_log "fn_hideTaskMarkers - WARNING: FINDOBJS MODE SHOULD BE CALLED ON SERVER ONLY."};
     waitUntil {!isNil "BIS_moduleHvtObjectivesInstance_initialized"};
     waitUntil {BIS_moduleHvtObjectivesInstance_initialized};
+    sleep 10;
 
     _searchRadius = (sqrt (worldSize * worldSize)) max 10000;
     _worldCenter = [worldSize/2, worldSize/2];
