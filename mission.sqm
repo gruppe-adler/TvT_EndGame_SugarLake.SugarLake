@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=3970;
+		nextID=3973;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1208;
+		nextID=1312;
 	};
 	class Camera
 	{
-		pos[]={5756.5015,89.315727,4033.5637};
-		dir[]={-0.37010238,-0.34823,0.86127263};
-		up[]={-0.13748765,0.93740553,0.31995073};
-		aside[]={0.91877663,-3.8649887e-008,0.39481342};
+		pos[]={7337.6904,141.95773,3199.7502};
+		dir[]={-0.94299984,-0.29649767,0.15115257};
+		up[]={-0.29276192,0.955033,0.046926584};
+		aside[]={0.15826954,-7.3632691e-009,0.98739904};
 	};
 };
 binarizationWanted=0;
@@ -748,7 +748,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=466;
+		items=469;
 		class Item0
 		{
 			dataType="Marker";
@@ -993,7 +993,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=10;
+							value=300;
 						};
 					};
 				};
@@ -1188,12 +1188,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={6088.042,6.6169877,1358.4629};
+				position[]={6088.042,6.6170001,1358.463};
 			};
 			name="moduleEndGame";
 			id=56;
 			type="ModuleHvtEndGameObjective_F";
-			atlOffset=5.6169877;
+			atlOffset=5.6170001;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45990,16 +45990,229 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item466
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2753.5918,1.9400001,824.4494};
+			};
+			id=3970;
+			type="ACE_moduleAddSpareParts";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleAddSpareParts_Part";
+					expression="_this setVariable ['Part',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ACE_Wheel";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_moduleAddSpareParts_List";
+					expression="_this setVariable ['List',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ACE_moduleAddSpareParts_Amount";
+					expression="_this setVariable ['Amount',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=4;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item467
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3287.439,1.9400001,7498.7559};
+			};
+			id=3971;
+			type="ACE_moduleAddSpareParts";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleAddSpareParts_Part";
+					expression="_this setVariable ['Part',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ACE_Wheel";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_moduleAddSpareParts_List";
+					expression="_this setVariable ['List',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ACE_moduleAddSpareParts_Amount";
+					expression="_this setVariable ['Amount',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=4;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item468
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3288.272,1.9400001,7494.8188};
+			};
+			id=3972;
+			type="ACE_moduleAddSpareParts";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleAddSpareParts_Part";
+					expression="_this setVariable ['Part',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ACE_Wheel";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_moduleAddSpareParts_List";
+					expression="_this setVariable ['List',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ACE_moduleAddSpareParts_Amount";
+					expression="_this setVariable ['Amount',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=4;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=23;
+			nextID=26;
 		};
 		class Links
 		{
-			items=23;
+			items=26;
 			class Item0
 			{
 				linkID=0;
@@ -46225,6 +46438,36 @@ class Mission
 				linkID=22;
 				item0=1827;
 				item1=33;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item23
+			{
+				linkID=23;
+				item0=3970;
+				item1=2053;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item24
+			{
+				linkID=24;
+				item0=3972;
+				item1=2055;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item25
+			{
+				linkID=25;
+				item0=3971;
+				item1=3967;
 				class CustomData
 				{
 					type="Sync";

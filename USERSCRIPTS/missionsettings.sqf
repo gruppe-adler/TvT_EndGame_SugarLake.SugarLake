@@ -13,7 +13,7 @@ MAXRESPAWNTIME = 1200;                //maximum time a player has to wait under 
 VEHICLERESPAWNTIME = 400;             //time after which vehicles respawn
 VEHICLERESPAWNRADIUS = 500;           //distance between startposition and current position for a vehicle to start the respawn timer
 
-UPLOADSPEED = 0.05;                      //speed of 1 means ~ 90 second upload for one person / 45 second for two / etc.    speed of 0.5 means 180 seconds for one person
+UPLOADSPEED = 0.125;                      //speed of 1 means ~ 90 second upload for one person / 45 second for two / etc.    speed of 0.5 means 180 seconds for one person
 DLICONRANGE = 20;                     //range in meters at which 3D icon on intel is displayed - -1 to disable entirely - WARNING: values lower than 4 may cause inability to access large download objects (vehicles, cargo containers, ...)
 EXACTINTELPOSITIONS = false;          //phase 2 task markers are exactly on intel positions - if false, trigger area is marked instead
 DEFMARKERONUL = false;                //phase 3 - defending team will only be able to see the upload point once the attacking team has started uploading
