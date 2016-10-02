@@ -41,6 +41,7 @@ if (isServer) then {
   };
 
   //setup scripts
+  [] execVM "USERSCRIPTS\removeGates.sqf";
   [] execVM "server\killableLaptops.sqf";
   [] execVM "server\removeFromCleanup.sqf";
   [] execVM "server\clearVehicles.sqf";

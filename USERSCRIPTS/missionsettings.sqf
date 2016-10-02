@@ -6,7 +6,7 @@ loadScreen = "data\loadpic.paa";      //picture in loadscreen
 USECUSTOMLOADOUTS = true;             //use custom loadouts defined in bluforLoadouts.sqf and opforLoadouts.sqf?  (true/false)
 #define CIVTRAFFIC 0                  //civilian traffic parameter default value - 0: traffic off - 1: traffic on
 
-RESPAWNTIME = 150;                    //delay before player gets added to the wave
+RESPAWNTIME = 270;                    //delay before player gets added to the wave
 WAVERESPAWNTIME = 270;                //delay before a complete wave respawns
 RESPAWNWAVEEXTRATIME = 30;            //time after a wave has respawned, that an additional player may respawn alone in
 MAXRESPAWNTIME = 1200;                //maximum time a player has to wait under any circumstances (will respawn alone if needed)
